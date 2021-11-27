@@ -11,7 +11,7 @@ Product.init(
   {
     // define columns
     id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allownull: false,
       primaryKey: true,
       autoIncrement: true
@@ -36,7 +36,7 @@ Product.init(
         isNumeric: true,
       }
     },
-    catagory_id: {
+    category_id: {
       type: DataTypes.INTEGER,
       references: {
         // * References the `Category` model's `id`.
